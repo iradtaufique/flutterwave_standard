@@ -1,0 +1,21 @@
+{
+    "tx_ref": "hooli-tx-1920bbtyttyjhu",
+    "amount": "100",
+    "currency": "RWF",
+    "redirect_url": "http://localhost:8000/",
+    "payment_options": "card",
+    "meta": {
+        "consumer_id": 23,
+        "consumer_mac": "92a3-912ba-1192a"
+    },
+    "customer": {
+        "email": "fab.wastee@gmail.com",
+        "phonenumber": "0783845574",
+        "name": "custome_name"
+    },
+    "customizations": {
+        "title": "Saving Wallet",
+        "description": "Adding Money To Saving Wallet",
+        "logo": "https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
+    }
+}
