@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+      <div>
+        Your order is 3,400
+      </div>
+      <input type="hidden" name="public_key" value="FLWPUBK_TEST-SANDBOXDEMOKEY-X" />
+      <input type="hidden" name="customer[email]" value="jessepinkman@walterwhite.org" />
+      <input type="hidden" name="customer[name]" value="Jesse Pinkman" />
+      <input type="hidden" name="tx_ref" value="bitethtx-019203" />
+      <input type="hidden" name="amount" value="3400"/>
+      <input type="hidden" name="currency" value="NGN" />
+      <input type="hidden" name="meta[token]" value="54" />
+      <input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/" />
+      <button type="submit" id="start-payment-button">Pay Now</button>
+    </form>
+
+
+
+</body>
+</html>

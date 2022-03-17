@@ -14,8 +14,8 @@
         "name": "custome_name"
     },
     "customizations": {
-        "title": "Saving Wallet",
-        "description": "Adding Money To Saving Wallet",
+        "title": "Add money to your wallet",
+        "description": "Company descriptions",
         "logo": "https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
     }
 }

@@ -4,7 +4,7 @@ import requests
 
 
 def process_payment(amount, name, email):
-    hed = {'Authorization': 'Bearer ' + 'FLWSECK_TEST-5746d0af39f7689a2590de6454555385-X'}
+    hed = {'Authorization': 'Bearer ' + 'your secrete key'}
     data = {
         "tx_ref": '' + str(math.floor(1000000 + random.random() * 9000000)),
         "amount": amount,
