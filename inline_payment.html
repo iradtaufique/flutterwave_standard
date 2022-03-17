@@ -1,0 +1,33 @@
+<script src="https://checkout.flutterwave.com/v3.js"></script>
+<form style="margin-left: 50%; margin-top: 8%">
+  <div>
+    Your order is RWF 600
+  </div>
+  <button style="border: 1px green solid; padding: 10px; background-color: green; color: white;" type="button" id="start-payment-button" onclick="makePayment()">Pay Now</button>
+</form>
+<script>
+  function makePayment() {
+    FlutterwaveCheckout({
+      public_key: "FLWPUBK_TEST-5036ef94282c0cce41567db775b7acb1-X",
+      tx_ref: "titanic-48981487343MDI0NzMx",
+      amount: 600,
+      currency: "RWF",
+      payment_options: "mobilemoneyrwanda",
+      redirect_url: "http://127.0.0.1:5500/flutterwave/inlinepayment.html",
+      meta: {
+        consumer_id: 23,
+        consumer_mac: "92a3-912ba-1192a",
+      },
+      customer: {
+        email: "rose@unsinkableship.com",
+        phone_number: "08102909304",
+        name: "Rose DeWitt Bukater",
+      },
+      customizations: {
+        title: "The Titanic Store",
+        description: "Payment for an awesome cruise",
+        logo: "https://www.logolynx.com/images/logolynx/22/2239ca38f5505fbfce7e55bbc0604386.jpeg",
+      },
+    });
+  }
+</script>
